@@ -27,11 +27,11 @@ nav {
                     transition: transform 0.5s ease-in-out;
                     a {
                         text-decoration: none;
-                        color: $color-neutral-dark-gray-blue;
+                        color: $color-primary-black;
                         font-weight: 500;
                         padding: 0.7rem;
                         &:active, &:hover {
-                            color: $color-primary-red;
+                            color: $color-secondary-font;
                             font-weight: bolder;
                         }
                         li {
@@ -67,7 +67,7 @@ nav {
                         height: 4px;
                         width: 100%;
                         border-radius: 10px;
-                        background: $color-neutral-dark-blue;
+                        background: $color-primary-black;
                         &.line1 {
                             transform-origin: 0% 0%;
                             transition: transform 0.4s ease-in-out;

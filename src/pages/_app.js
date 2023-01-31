@@ -1,7 +1,7 @@
 import '@/styles/index.scss'
 import Head from 'next/head'
-import DesktopNavbar from '../components/molecules/desktopNavbar';
-import MobileNavbar from '../components/molecules/mobileNavbar';
+import DesktopNavbar from '../components/desktopNavbar';
+import MobileNavbar from '../components/mobileNavbar';
 
 export default function App({ Component, pageProps }) {
   return (

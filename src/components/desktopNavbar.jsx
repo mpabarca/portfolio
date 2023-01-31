@@ -1,7 +1,7 @@
 import Link from 'next/link';
-import { navLinks } from '../../data/navbarLinks';
+import { navLinks } from '../data/navbarLinks';
 import Image from 'next/image';
-import logo from '../../../public/logo.png';
+import logo from '../../public/logo.png';
 
 const DesktopNavbar = () => {
     return (
