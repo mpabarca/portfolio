@@ -14,12 +14,14 @@ export default function App({ Component, pageProps }) {
       </Head>
       <DesktopNavbar />
       <MobileNavbar />
-      <Component {...pageProps} />
-      <footer>
-        <a href="https://www.flaticon.com/free-icons/moon" title="moon icons" rel="noreferrer" target="_blank">
-          Moon icons created by Freepik - Flaticon
-        </a>
-      </footer>
+      <section className='content'>
+        <Component {...pageProps} />
+        <footer>
+          <a href="https://www.flaticon.com/free-icons/moon" title="moon icons" rel="noreferrer" target="_blank">
+            Moon icons created by Freepik - Flaticon
+          </a>
+        </footer>
+      </section>
     </>
   )
 }
