@@ -29,16 +29,16 @@ const DesktopNavbar = () => {
             </ul>
             <ul className='menu-rrss'>
                 <Link href='https://github.com/mpabarca'>
-                    <FontAwesomeIcon icon={faGithub} />
+                    <FontAwesomeIcon icon={faGithub} size='xl'/>
                 </Link>
                 <Link href='https://www.linkedin.com/in/mpabarca/'>
-                    <FontAwesomeIcon icon={faLinkedin} />
+                    <FontAwesomeIcon icon={faLinkedin} size='xl'/>
                 </Link>
                 <Link href='https://www.instagram.com/pacita_tua/'>
-                    <FontAwesomeIcon icon={faInstagram} />
+                    <FontAwesomeIcon icon={faInstagram} size='xl'/>
                 </Link>
                 <Link href='mailto:mp.abarca.alvear@gmail.com'>
-                    <FontAwesomeIcon icon={faEnvelope} />
+                    <FontAwesomeIcon icon={faEnvelope} size='xl'/>
                 </Link>
             </ul>
         </nav>

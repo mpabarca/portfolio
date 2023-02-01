@@ -1,7 +1,48 @@
 nav {
     &.desktop {
-        background-color: red;
         width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 2rem;
+        .logo {
+            a {
+                img {
+                    width: 90px;
+                    height: auto;
+                }
+            }
+        }
+        ul.menu {
+            list-style-type: none;
+            a {
+                text-decoration: none;
+                li {
+                    font-size: $font-size-navbar;
+                    color: $color-primary-font;
+                    font-weight: $font-weight-normal;
+                    text-underline-offset: 0.2em;
+                    padding-bottom: 1rem;
+                    letter-spacing: .1rem;
+                    &:hover, &:active {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        .menu-rrss {
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            a {
+                svg {
+                    color: $color-primary-font;
+                    &:hover, &:active {
+                        color: $color-primary-purple;
+                    }
+                }
+            }
+        }
     }
     &.mobile {
         display: none;
