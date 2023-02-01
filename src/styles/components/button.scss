@@ -7,14 +7,27 @@
     letter-spacing: .05rem;
     font-family: inherit;
     margin: 1.2rem 1rem 1rem 0;
+    &:hover, &:active {
+        cursor: pointer;
+    }
     &.dark {
         background-color: $color-primary-purple;
         color: $color-background;
         border: .2rem solid $color-primary-purple;
+        &:hover, &:active {
+            color: $color-primary-purple;
+            background-color: $color-background;
+            border: .2rem solid $color-primary-purple;
+        }
     }
     &.light {
         color: $color-primary-purple;
         background-color: $color-background;
         border: .2rem solid $color-primary-purple;
+        &:hover, &:active {
+            background-color: $color-primary-purple;
+            color: $color-background;
+            border: .2rem solid $color-primary-purple;
+        }
     }
 }
