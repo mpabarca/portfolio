@@ -8,24 +8,24 @@ body {
     background-color: $color-background;
     font-family: $font-family-base;
     color: $color-primary-font;
-    padding: $padding-global;
-    margin: auto;
-    max-width: 93.7rem;
-    display: flex;
-    justify-content: center;
+    // padding: $padding-global;
+    // margin: auto;
+    // max-width: 93.7rem;
+    // display: flex;
+    // justify-content: center;
 
 }
 
 @media only screen and (max-width: 93.7rem){
     body {
-        padding: 4rem;
+        // padding: 4rem;
     }
 }
 
 @media only screen and (max-width: $size-breakpoint-responsive){
     body {
-        display: block;
-        padding: $padding-global-mobile;
-        max-width: 65.6rem;
+        // display: block;
+        // padding: $padding-global-mobile;
+        // max-width: 65.6rem;
     }
 }

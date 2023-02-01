@@ -1,0 +1,17 @@
+.main {
+    display: flex;
+    flex-direction: row;
+    .content {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 93.7rem){
+    .main {
+    }
+}
+
+@media only screen and (max-width: $size-breakpoint-responsive){
+    .main {
+    }
+}
