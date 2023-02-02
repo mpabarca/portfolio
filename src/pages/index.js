@@ -14,12 +14,12 @@ export default function Home() {
         <Button
           text={'Get In Touch'}
           isDark={true}
-          onClickFunction={()=> {console.log('on click dark de button')}}
+          path={'/contact'}
         />
         <Button
           text={'About Me'}
           isDark={false}
-          onClickFunction={()=> {console.log('on click light de button')}}
+          path={'/about'}
         />
       </div>
     </div>

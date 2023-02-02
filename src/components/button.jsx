@@ -1,11 +1,14 @@
-const Button = ({text, isDark, onClickFunction}) => {
+import Link from 'next/link';
+
+const Button = ({text, isDark, path}) => {
     return (
-        <button 
-            className={`button-purple ${isDark ? 'dark' : 'light'}`}
-            onClick={onClickFunction}
-        >
-            {text}
-        </button>
+        <Link href={path}>
+            <button 
+                className={`button-purple ${isDark ? 'dark' : 'light'}`}
+            >
+                {text}
+            </button>
+        </Link>
     )
 };
 
