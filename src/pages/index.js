@@ -15,11 +15,15 @@ export default function Home() {
           text={'Get In Touch'}
           isDark={true}
           path={'/contact'}
+          passHref={false}
+          anotherPage={false}
         />
         <Button
           text={'About Me'}
           isDark={false}
           path={'/about'}
+          passHref={false}
+          anotherPage={false}
         />
       </div>
     </div>
