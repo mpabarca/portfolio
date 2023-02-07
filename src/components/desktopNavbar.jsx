@@ -28,16 +28,16 @@ const DesktopNavbar = () => {
                 })}
             </ul>
             <ul className='menu-rrss'>
-                <Link href='https://github.com/mpabarca'>
+                <Link href='https://github.com/mpabarca' target='_blank'>
                     <FontAwesomeIcon icon={faGithub} size='xl'/>
                 </Link>
-                <Link href='https://www.linkedin.com/in/mpabarca/'>
+                <Link href='https://www.linkedin.com/in/mpabarca/' target='_blank'>
                     <FontAwesomeIcon icon={faLinkedin} size='xl'/>
                 </Link>
-                <Link href='https://www.instagram.com/pacita_tua/'>
+                <Link href='https://www.instagram.com/pacita_tua/' target='_blank'>
                     <FontAwesomeIcon icon={faInstagram} size='xl'/>
                 </Link>
-                <Link href='mailto:mp.abarca.alvear@gmail.com'>
+                <Link href='mailto:mp.abarca.alvear@gmail.com' target='_blank'>
                     <FontAwesomeIcon icon={faEnvelope} size='xl'/>
                 </Link>
             </ul>
