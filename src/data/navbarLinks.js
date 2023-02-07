@@ -6,10 +6,10 @@ export const navLinks = [
     name: "About me.",
     path: "/about",
   },
-  {
-    name: "Blog .",
-    path: "/blog",
-  },
+  // {
+  //   name: "Blog .",
+  //   path: "/blog",
+  // },
   {
     name: "Contacting me .",
     path: "/contact",
