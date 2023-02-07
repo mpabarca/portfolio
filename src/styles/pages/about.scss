@@ -16,9 +16,15 @@
         padding-left: 1.5rem;
     }
     ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
         margin-left: 1.5rem;
         li {
+            min-width: 20rem;
             font-size: $font-size-paragraph;
+            margin-bottom: .5rem;
         }
     }
 }

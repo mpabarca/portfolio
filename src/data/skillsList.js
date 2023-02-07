@@ -2,7 +2,7 @@ export const skillsList = [
     'JavaScript (ES6+)',
     'React (Hooks)',
     'TypeScript',
-    'CSS, Sass, Styled Component, Bootstrap',
+    'CSS, Sass, others',
     'Git, Bitbucket',
     'REST Api',
     'GraphQL'
