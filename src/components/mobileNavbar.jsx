@@ -13,7 +13,7 @@ const MobileNavbar = () => {
                         <Link href='/'>
                         <Image 
                             src={logo}
-                            height={28}
+                            height={40}
                             alt='logo'
                         />
                         </Link >

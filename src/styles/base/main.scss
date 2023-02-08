@@ -20,5 +20,13 @@
 
 @media only screen and (max-width: $size-breakpoint-responsive){
     .main {
+        flex-direction: column;
+        justify-content: space-between;
+        .content {
+            justify-content: start;
+            width: 100%;
+            height: auto;
+            padding: 1rem;
+        }
     }
 }

@@ -14,3 +14,14 @@
         max-width: 35rem;
     }
 }
+
+@media only screen and (max-width: $size-breakpoint-responsive){
+    .contact {
+        margin-bottom: 6rem;
+        height: auto;
+        justify-content: start;
+        h1 {
+            position: unset;
+        }
+    }
+}

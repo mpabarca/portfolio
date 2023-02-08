@@ -60,7 +60,6 @@ nav {
                     height: 100vh;
                     width: 100%;
                     text-align: end;
-                    margin-left: -40px;
                     padding-top: 120px;
                     padding-left: 50px;
                     box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
@@ -73,6 +72,7 @@ nav {
                         color: $color-primary-black;
                         font-weight: $font-weight-bold;
                         padding: 0.7rem;
+                        font-size: $font-size-navbar-mobile;
                         &:active, &:hover {
                             color: $color-secondary-font;
                             font-weight: $font-weight-bold;
@@ -139,6 +139,7 @@ nav {
                 transition: transform 0.5s ease-in-out;
                 // until where move the menu since appears
                 transform: translateX(0);
+                background-color: $color-background;
             }
             input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
                 transform: rotate(45deg);
@@ -158,13 +159,13 @@ nav {
 }
 
 @media only screen and (max-width: $size-breakpoint-responsive) {
-
     nav{
         &.desktop {
             display: none;
         }
         &.mobile {
             display: block;
+            padding: 0 1rem;
         } 
     }
 }
