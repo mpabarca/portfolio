@@ -36,7 +36,7 @@ export function NavMain({
 }) {
   return (
     <SidebarGroup>
-      <SidebarGroupLabel>Platform</SidebarGroupLabel>
+      <SidebarGroupLabel>Sections</SidebarGroupLabel>
       <SidebarMenu>
         {items.map((item) => (
           <React.Fragment key={`sidebar-item-${item.title}`}>
@@ -74,11 +74,13 @@ export function NavMain({
               <SidebarMenuItem>
                 <SidebarMenuButton tooltip={item.title}>
                   {item.icon && <item.icon />}
-                  <span>{item.title}</span>
+                  <a href={item.url}>
+                    <span>{item.title}</span>
+                  </a>
                 </SidebarMenuButton>
               </SidebarMenuItem>
             )}
-          </ React.Fragment>
+          </React.Fragment>
         ))}
       </SidebarMenu>
     </SidebarGroup>

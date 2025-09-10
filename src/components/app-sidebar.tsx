@@ -10,12 +10,14 @@ import {
 } from "lucide-react";
 
 import { NavMain } from "@/src/components/nav-main";
-import { TeamSwitcher } from "@/src/components/team-switcher";
 import {
   Sidebar,
   SidebarContent,
   SidebarHeader,
   SidebarRail,
+  SidebarMenu,
+  SidebarMenuButton,
+  SidebarMenuItem,
 } from "@/src/components/ui/sidebar";
 
 const data = {
@@ -64,8 +66,20 @@ const data = {
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
     <Sidebar collapsible='icon' {...props}>
-      <SidebarHeader>
-        <TeamSwitcher teams={data.teams} />
+      <SidebarHeader className="pt-4">
+        <SidebarMenu>
+          <SidebarMenuItem>
+            <SidebarMenuButton
+              asChild
+              className='data-[slot=sidebar-menu-button]:!p-1.5'
+            >
+              <a href=''>
+                <GalleryVerticalEnd className='!size-5' />
+                <span className='text-base font-semibold'>Maria Paz Abarca</span>
+              </a>
+            </SidebarMenuButton>
+          </SidebarMenuItem>
+        </SidebarMenu>
       </SidebarHeader>
       <SidebarContent>
         <NavMain items={data.navMain} />
