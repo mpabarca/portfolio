@@ -2,21 +2,18 @@
 
 import * as React from "react";
 import {
-  AudioWaveform,
-  BookOpen,
-  Command,
+  BriefcaseBusiness,
   GalleryVerticalEnd,
-  Settings2,
-  SquareTerminal,
+  AppWindow,
+  Home,
+  Mail,
 } from "lucide-react";
 
 import { NavMain } from "@/src/components/nav-main";
-import { NavUser } from "@/src/components/nav-user";
 import { TeamSwitcher } from "@/src/components/team-switcher";
 import {
   Sidebar,
   SidebarContent,
-  SidebarFooter,
   SidebarHeader,
   SidebarRail,
 } from "@/src/components/ui/sidebar";
@@ -36,59 +33,30 @@ const data = {
   ],
   navMain: [
     {
-      title: "Playground",
-      url: "#",
-      icon: SquareTerminal,
+      title: "About me",
+      url: "/about",
+      icon: Home,
       isActive: false,
       isCollapsible: false,
     },
     {
-      title: "Documentation",
-      url: "#",
-      icon: BookOpen,
-      isCollapsible: true,
-      items: [
-        {
-          title: "Introduction",
-          url: "#",
-        },
-        {
-          title: "Get Started",
-          url: "#",
-        },
-        {
-          title: "Tutorials",
-          url: "#",
-        },
-        {
-          title: "Changelog",
-          url: "#",
-        },
-      ],
+      title: "Work Experience",
+      url: "/work",
+      icon: BriefcaseBusiness,
+      isCollapsible: false,
     },
     {
-      title: "Settings",
-      url: "#",
-      icon: Settings2,
-      isCollapsible: true,
-      items: [
-        {
-          title: "General",
-          url: "#",
-        },
-        {
-          title: "Team",
-          url: "#",
-        },
-        {
-          title: "Billing",
-          url: "#",
-        },
-        {
-          title: "Limits",
-          url: "#",
-        },
-      ],
+      title: "Projects",
+      url: "/projects",
+      icon: AppWindow,
+      isCollapsible: false,
+    },
+    {
+      title: "Contact me",
+      url: "/contact",
+      icon: Mail,
+      isCollapsible: false,
+      isActive: true,
     },
   ],
 };
@@ -102,9 +70,6 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       <SidebarContent>
         <NavMain items={data.navMain} />
       </SidebarContent>
-      <SidebarFooter>
-        <NavUser user={data.user} />
-      </SidebarFooter>
       <SidebarRail />
     </Sidebar>
   );
